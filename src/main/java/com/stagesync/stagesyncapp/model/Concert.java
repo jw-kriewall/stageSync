@@ -14,7 +14,7 @@ public class Concert {
     private Date startDateTime;
     private Date endDateTime;
     private Venue venue;
-    private Sponsor sponsor;
+    private List<Sponsor> sponsor;
     private List<Musician> conductor;
     private List<Musician> musicians;
 
@@ -58,11 +58,11 @@ public class Concert {
         this.venue = venue;
     }
 
-    public Sponsor getSponsor() {
+    public List<Sponsor> getSponsor() {
         return sponsor;
     }
 
-    public void setSponsor(Sponsor sponsor) {
+    public void setSponsor(List<Sponsor> sponsor) {
         this.sponsor = sponsor;
     }
 
